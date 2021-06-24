@@ -13,7 +13,7 @@ function Cards( props ) {
             </Card.Description>
             </Card.Content>
             <Card.Content extra>
-            <Button href={`github.com/mkotte${props.repo}`} className="card-btn-link" target="_blank" >
+            <Button href={`https://github.com/mkotte${props.repo}`} className="card-btn-link" target="_blank" >
                 Github Repository
             </Button>
             {props.app !== "none" ? 

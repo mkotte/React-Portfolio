@@ -45,13 +45,14 @@ function Project(){
             description: 'PWA budget tracker deployed to Heroku using MongoDB Atlas, Node.js, and Express featuring offline accessibility.',
             repo: '/CovidWoke',
             app: 'https://ancient-everglades-37448.herokuapp.com/'
-        }]
+        }
+    ];
 
     return(
         <>
             <div id="project-wrapper">
-                <Card.Group itemsPerRow={2}>
-                    <Cards />  
+                <Card.Group itemsPerRow={2} centered stackable>
+                    { projectInfo.map(info => { return <Cards {...info}/> } )}
                 </Card.Group>
             </div>
         </>
