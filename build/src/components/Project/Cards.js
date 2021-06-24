@@ -1,26 +1,31 @@
 import React from 'react'
-import { Card, Icon, Image } from 'semantic-ui-react'
+import { Card, Button, Image } from 'semantic-ui-react'
 
 // Using semantic.ui for the cards!
-const CardExampleCard = () => (
-  <Card>
-    <Image src='https://react.semantic-ui.com/images/avatar/large/matthew.png' wrapped ui={false} />
-    <Card.Content>
-      <Card.Header>Matthew</Card.Header>
-      <Card.Meta>
-        <span className='date'>Joined in 2015</span>
-      </Card.Meta>
-      <Card.Description>
-        Matthew is a musician living in Nashville.
-      </Card.Description>
-    </Card.Content>
-    <Card.Content extra>
-      <a>
-        <Icon name='user' />
-        22 Friends
-      </a>
-    </Card.Content>
-  </Card>
-);
+function Cards( props ) {
+    return (
+        <Card fluid color='white'>
+            <Image src={props.image} wrapped ui={false} />
+            <Card.Content>
+                <Card.Header>{props.name}</Card.Header>
+            <Card.Description>
+                {props.description}
+            </Card.Description>
+            </Card.Content>
+            <Card.Content extra>
+            <Button href={`github.com/mkotte${props.repo}`} className="card-btn-link" target="_blank" >
+                Github Repository
+            </Button>
+            {props.app !== "none" ? 
+            <Button href={props.app} className="card-btn-link" target="_blank" >
+                Deployed Application
+            </Button> : 
+            <> </>  
+            }
+            </Card.Content>
+        </Card>
+    )
+};
 
-export default CardExampleCard
+
+export default Cards;

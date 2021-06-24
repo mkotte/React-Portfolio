@@ -50,7 +50,9 @@ function Project(){
     return(
         <>
             <div id="project-wrapper">
-                <Cards />
+                <Card.Group itemsPerRow={2}>
+                    <Cards />  
+                </Card.Group>
             </div>
         </>
     )
