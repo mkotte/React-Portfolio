@@ -6,12 +6,14 @@ import Home from './pages/Home.js';
 import Work from './pages/Work.js'
 import NoMatch from './pages/NoMatch.js'
 import './App.css';
+import 'semantic-ui-css/semantic.min.css'
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Home />
+      <Work />
+      {/* <Home /> */}
         {/* <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/work" component={Work} />
