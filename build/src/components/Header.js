@@ -11,7 +11,7 @@ function Header() {
                         <a href="/">Home</a>
                     </li>                
                     <li>
-                        <a href="/React-Portfolio/#//work">Work</a> 
+                        <a href="/React-Portfolio/#/work">Work</a> 
                     </li>
                 </ul>
             </div>
