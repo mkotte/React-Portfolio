@@ -10,4 +10,4 @@
 ## Links 
 Deployed Application (https://mkotte.github.io/React-Portfolio/#/)
 
-Repository (https://github.com/mkotte/React-Portfolio/edit/main/README.md)
+Repository (https://github.com/mkotte/React-Portfolio/)
