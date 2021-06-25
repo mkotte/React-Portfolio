@@ -3,7 +3,7 @@ import React from "react";
 function Overview(){
     return(
         <div class="about-me-overview">
-            <img src="./profilePhotoSquare.jpeg" alt="headshot of C. Michael Kotte" class="float-left profile-photo"/>
+            <img src="profilePhotoSquare.jpeg" alt="headshot of C. Michael Kotte" class="float-left profile-photo"/>
             <h2>C. Michael Kotte</h2>
             <h3>Bootcamp Graduate & CS Student</h3>
             
